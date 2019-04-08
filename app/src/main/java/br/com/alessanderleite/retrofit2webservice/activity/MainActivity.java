@@ -1,7 +1,9 @@
-package br.com.alessanderleite.retrofit2webservice;
+package br.com.alessanderleite.retrofit2webservice.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import br.com.alessanderleite.retrofit2webservice.R;
 
 public class MainActivity extends AppCompatActivity {
 
