@@ -9,7 +9,7 @@ public class NoticeList {
     @SerializedName("notice_list")
     private ArrayList<Notice> noticeList;
 
-    public ArrayList<Notice> getNoticeList() {
+    public ArrayList<Notice> getNoticeArrayList() {
         return noticeList;
     }
 
