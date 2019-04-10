@@ -30,7 +30,9 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
 
     @Override
     public void onBindViewHolder(@NonNull NoticeViewHolder holder, int position) {
-
+        holder.txtNoticeTitle.setText(dataList.get(position).getTitle());
+        holder.txtNoticeBrief.setText(dataList.get(position).getBrief());
+        holder.txtNoticeFilePath.setText(dataList.get(position).getFileSource());
     }
 
     @Override
@@ -40,12 +42,12 @@ public class NoticeAdapter extends RecyclerView.Adapter<NoticeAdapter.NoticeView
 
     public class NoticeViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtNoticeTitle, txtNoticeBrif, txtNoticeFilePath;
+        TextView txtNoticeTitle, txtNoticeBrief, txtNoticeFilePath;
 
         public NoticeViewHolder(@NonNull View itemView) {
             super(itemView);
             txtNoticeTitle = itemView.findViewById(R.id.txt_notice_title);
-            txtNoticeBrif = itemView.findViewById(R.id.txt_notice_brief);
+            txtNoticeBrief = itemView.findViewById(R.id.txt_notice_brief);
             txtNoticeFilePath = itemView.findViewById(R.id.txt_notice_file_path);
         }
     }
